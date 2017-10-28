@@ -246,7 +246,7 @@ contract MultiSigWallet {
         notExecuted(transactionId)
         executable(transactionId)
     {
-        Transaction txToExecute = transactions[transactionId];
+        Transaction txToExecute = transactions[transactionId]; /* FLAG: storage keyword warning */
         txToExecute.executed = true;
         if (txToExecute.destination.call.value(txToExecute.value)(txToExecute.data))
             Execution(transactionId);
