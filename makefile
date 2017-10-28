@@ -1,4 +1,5 @@
 all:
+	mkdir -p ./dist
 	solc --combined-json "abi,bin" contracts/*.sol > ./dist/contracts.json
 
 clean:
