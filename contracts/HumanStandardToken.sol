@@ -59,6 +59,9 @@ contract HumanStandardToken is StandardToken {
         return true;
     }
 
+    /* FLAG: This function was added, is not from the original repo. 
+        I would normally have just ignored the HST file. :/
+     */
     function reversePurchase(address _tokenHolder)
         public
         onlySale

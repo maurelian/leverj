@@ -63,6 +63,9 @@ contract StandardToken is Token {
 
     modifier validTransfer()
     {
+        /* NOTE: `sale` is defined in Token.sol, a parent contract which doesn't use it. 
+            OK, I guess that's because Token.sol is the interface
+        */
         require(msg.sender == sale || transfersAllowed);
         _;
     }

@@ -11,10 +11,10 @@ contract Token {
     This is moved to the base contract since public getter functions are not
     currently recognised as an implementation of the matching abstract
     function by the compiler.
-    */
+    */ /* NOTE: regarding the above, the getter function impl must not be allowed? */
     /// total amount of tokens
     uint256 public totalSupply;
-    address public sale;
+    address public sale; /* NOTE: why is `sale` defined in a contract which doesn't use it? */
     bool public transfersAllowed;
     
     /// @param _owner The address from which the balance will be retrieved

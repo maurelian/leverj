@@ -81,8 +81,7 @@
 - call with address 0
 - call with array lengths not equal
 - call with amount 0
-- call with amount under 1eth worth
-- call with amount over 500eth worh
+- call with amount under 1eth worth <!-- FLAG: I can't find this test case -->
 - call with underflow amount
 - call with overflow amount
 - call with purchaser.length > 50
